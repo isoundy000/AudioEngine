@@ -1,11 +1,19 @@
 # Audio
-Simple 3D OpenAL audio engine with support ogg, wav format. Audio is wrote language C++ with minimal dependencies. 
-This is part of engine https://bitbucket.org/deviantbytes/deviant-engine/wiki/Home
+Simple OpenAL audio "engine" with support ogg, wav format. Audio is wrote language C++ with minimal dependencies. 
+This is part of engine https://bitbucket.org/deviantbytes/deviant-engine/wiki/Home       
+3D graphic is part of repository https://github.com/Martinfx/LearnOpenGL
 
 ## Dependencies
  * Glm
  * OpenAL-Soft
- * Stb-vorbis
+ * stb_vorbis
+
+## Dependencies for example
+  * Glm
+  * OpenAL-Soft
+  * stb_vorbis
+  * stb_image
+  * GLFW
  
  License
 ============
