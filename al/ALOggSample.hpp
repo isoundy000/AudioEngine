@@ -15,7 +15,6 @@ public:
 
     OggSample();
     OggSample(const std::string &path);
-    OggSample& operator=(OggSample &sample);
     virtual ~OggSample();
 
 private:

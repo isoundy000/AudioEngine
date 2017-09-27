@@ -46,18 +46,6 @@ OggSample::OggSample(const std::string &path) : m_channels(0), m_sampleRate(0.0)
     alBufferData(m_buffer, format, data, sizeof(short) * samples * m_channels, m_sampleRate);
 }
 
-OggSample& OggSample::operator=(OggSample &sample)
-{
-    if(this != &sample)
-    {
-        m_channels = sample.m_channels;
-        m_sampleRate = sample.m_sampleRate;
-        m_duration = sample.m_duration;
-        m_error = sample.m_error;
-    }
-    return  *this;
-}
-
 OggSample::~OggSample()
 {
     LOG("Destructor");

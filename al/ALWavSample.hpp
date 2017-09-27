@@ -40,7 +40,6 @@ public:
 
     WavSample();
     WavSample(const std::string &path);
-    WavSample& operator=(WavSample &sample);
     virtual ~WavSample();
 
 private:

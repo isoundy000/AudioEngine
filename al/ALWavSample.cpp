@@ -67,20 +67,6 @@ WavSample::WavSample(const std::string &path) : m_file(path)
     }
 }
 
-WavSample& WavSample::operator=(WavSample &sample)
-{
-    if(this != &sample)
-    {
-        m_file = sample.m_file;
-        m_channels = sample.m_channels;
-        m_sampleRate = sample.m_sampleRate;
-        m_duration = sample.m_duration;
-        m_sizeStream = sample.m_sizeStream;
-        m_wave = sample.m_wave;
-    }
-    return  *this;
-}
-
 WavSample::~WavSample()
 {
     LOG("Destroy sample");
