@@ -6,17 +6,18 @@ namespace al
 {
 
 AudioSystem::AudioSystem() :
-    //m_default_listener_gain(m_settings.default_listener_gain)
-    //m_sound_gain(m_settings.sound_gain),
-    m_listener_gain(m_settings.doppler_factor),
+    m_listener_gain(m_settings.default_listener_gain),
+    m_sound_gain(m_settings.master_gain),
+    m_doppler_factor(m_settings.doppler_factor),
     m_speed_of_sound(m_settings.speed_of_sound)
 {
 
 }
 
 AudioSystem::AudioSystem(const AudioSystemSettings &settings) :
-    //m_sound_gain(settings.sound_gain),
-    m_listener_gain(settings.doppler_factor),
+    m_listener_gain(m_settings.default_listener_gain),
+    m_sound_gain(settings.master_gain),
+    m_doppler_factor(settings.doppler_factor),
     m_speed_of_sound(settings.speed_of_sound)
 {
 
@@ -48,8 +49,8 @@ std::shared_ptr<Source> AudioSystem::getSource(const std::string &name)
     {
         return found_source->second;
     }
-
     std::cout << "Invalid source , source not found." << std::endl;
+    return NULL;
 }
 
 } // namespace audio::al

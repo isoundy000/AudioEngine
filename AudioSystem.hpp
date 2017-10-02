@@ -22,7 +22,7 @@ public:
     float master_gain = 1.0f;
 
     /// Default listener gain.
-    float listener_gain = 1.0f;
+    float default_listener_gain = 1.0f;
 
     /// Doppler factor is a simple scaling of source and listener velocities
     /// to exaggerate or deemphasize the Doppler (pitch).
