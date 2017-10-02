@@ -1,5 +1,5 @@
 # Audio
-Simple OpenAL audio example with support ogg, wav format. Audio is wrote language C++ with minimal dependencies. 
+Simple experiment OpenAL audio example with support ogg, wav format. Audio is wrote language C++ with minimal dependencies. 
 This is part of engine https://bitbucket.org/deviantbytes/deviant-engine/wiki/Home       
 3D graphic is part of repository https://github.com/Martinfx/LearnOpenGL        
 Project is created in QtCreator (.pro)
