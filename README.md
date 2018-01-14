@@ -1,6 +1,6 @@
 # Audio
 Simple experimental OpenAL audio example with support ogg, wav format. Audio is written in C++ language with minimal dependencies. Project is created in QtCreator (.pro)
-The [deviant-eingine](https://bitbucket.org/deviantbytes/deviant-engine/wiki/Home) is part of this example.
+The [emerald](https://github.com/EmeraldEngine/Emerald) is part of this example.
 3D graphic is part of this [repository](https://github.com/Martinfx/LearnOpenGL).
 
 ## Dependencies
